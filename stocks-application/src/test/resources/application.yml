@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  # external Mongo url
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/personDB
+
+# MongoDB properties
+mongo:
+  db:
+    name: person_testDB
+    url: localhost

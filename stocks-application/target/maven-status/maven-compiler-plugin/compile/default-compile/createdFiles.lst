@@ -1,0 +1,11 @@
+com\stocksapp\api\ErrorCodes.class
+com\stocksapp\dao\StocksAppRepository.class
+com\stocksapp\service\impl\StocksAppServiceImpl.class
+com\stocksapp\ws\StocksAppController.class
+com\stocksapp\api\StocksAppError.class
+com\stocksapp\exception\ControllerAdvisor.class
+com\stocksapp\mapping\StockMapping.class
+com\stocksapp\api\Stock.class
+com\stocksapp\exception\StocksAppException.class
+com\stocksapp\model\Stock.class
+com\stocksapp\service\StocksAppService.class

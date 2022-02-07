@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.stocksapp.boot.StocksApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.561 s - in com.stocksapp.boot.StocksApplicationTest

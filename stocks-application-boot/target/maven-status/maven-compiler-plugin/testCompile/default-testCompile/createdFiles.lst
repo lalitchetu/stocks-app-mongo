@@ -1,0 +1,3 @@
+com\stocksapp\testdata\StocksAppTestData.class
+com\stocksapp\boot\StocksApplicationTest.class
+com\stocksapp\boot\StocksApplicationTest$1.class

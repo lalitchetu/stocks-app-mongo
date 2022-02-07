@@ -1,0 +1,18 @@
+#mongodb
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: stockApp
+
+#logging
+logging:
+  level:
+    root: debug
+    com.stocksapp: trace
+    org.springframework.data: debug
+
+springdoc:
+  swagger-ui:
+    enabled: true

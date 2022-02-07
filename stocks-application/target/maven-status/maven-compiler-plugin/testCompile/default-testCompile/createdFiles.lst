@@ -1,0 +1,3 @@
+com\stocksapp\configuration\TestConfiguration.class
+com\stocksapp\testdata\StocksAppTestData.class
+com\stocksapp\ws\StocksAppControllerTest.class

@@ -1,0 +1,50 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    hostname: mongo
+    restart: on-failure
+    ports:
+      - 27017:27017
+    networks:
+      - spring-cloud-network
+    volumes:
+      - $HOME/mongo:/data/db
+    healthcheck:
+      test: "exit 0"
+  stocks-application-boot:
+    #build: .
+    image: docker.io/lalitsingh28/stocks-application-boot:1.0.0-SNAPSHOT
+    depends_on:
+      - mongo
+    networks:
+      - spring-cloud-network
+    hostname: stocks-application-boot
+    restart: on-failure
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: "exit 0"
+
+networks:
+  spring-cloud-network:
+    driver: bridge
+
+#  traefik:
+#    container_name: "traefik"
+#    image: "traefik:v2.5.6"
+#    command:
+#      - --api.insecure=true
+#      - --api.dashboard=true
+#      - --providers.docker=true
+#      - --providers.docker.exposedbydefault=false
+#      - --providers.docker.network=frontend
+#      - --entrypoints.frontend.address=:80
+#    volumes:
+#      - "/var/run/docker.sock:/var/run/docker.sock"
+#    labels:
+#      - "traefik.enable=true"
+#    ports:
+#      - "80:80"
+#      - "8080:8080"

@@ -1,0 +1,3 @@
+com\stocksapp\boot\StocksMongoBeeApplication.class
+com\stocksapp\mongobee\MongoBeeConfig.class
+com\stocksapp\changeLogs\ChangeLogs.class

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stocks-application-boot" />
+        <module name="stocks-app" />
+        <module name="stocks-application-mongobee" />
+        <module name="stocks-application" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="stocks-app-mongo" target="8" />
+      <module name="stocks-application" target="8" />
+      <module name="stocks-application-boot" target="8" />
+      <module name="stocks-application-docker" target="8" />
+      <module name="stocks-application-mongobee" target="8" />
+      <module name="stocks-application-swagger" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="stocks-app-mongo" options="-parameters" />
+      <module name="stocks-application" options="-parameters" />
+      <module name="stocks-application-boot" options="-parameters" />
+      <module name="stocks-application-docker" options="-parameters" />
+      <module name="stocks-application-mongobee" options="-parameters" />
+      <module name="stocks-application-swagger" options="-parameters" />
+    </option>
+  </component>
+</project>

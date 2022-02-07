@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "9937f801-7c94-4f7d-9114-55ad031a6a00",
+    "name" : "Tesla Inc",
+    "currentPrice": 900.00,
+    "timeStamp": "2021-12-26T21:14:28+00:00"
+
+  },
+  {
+    "id" : "9937f801-7c94-4f7d-9114-55ad031a6a22",
+    "name" : "Apple computers",
+    "currentPrice": 550.00,
+    "timeStamp": "2021-12-27T21:14:28+00:00"
+
+  }
+]
